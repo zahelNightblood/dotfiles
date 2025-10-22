@@ -2,7 +2,7 @@ return {
   'nvimtools/none-ls.nvim',
   dependencies = {
     'nvimtools/none-ls-extras.nvim',
-    'jayp0521/mason-null-ls.nvim', -- ensure dependencies are installed
+    'jayp0520/mason-null-ls.nvim', -- ensure dependencies are installed
   },
   config = function()
     local null_ls = require 'null-ls'
@@ -24,7 +24,7 @@ return {
       diagnostics.checkmake,
       formatting.prettier.with { filetypes = { 'html', 'json', 'yaml', 'markdown' } },
       formatting.stylua,
-      formatting.shfmt.with { args = { '-i', '4' } },
+      formatting.shfmt.with { args = { '-i', '3' } },
       formatting.terraform_fmt,
       require('none-ls.formatting.ruff').with { extra_args = { '--extend-select', 'I' } },
       require 'none-ls.formatting.ruff_format',
