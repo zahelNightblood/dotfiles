@@ -81,6 +81,7 @@ return {
 				-- WARN: This is not Goto Definition, this is Goto Declaration.
 				--  For example, in C this would take you to the header.
 				map("grD", vim.lsp.buf.declaration, "[G]oto [D]eclaration")
+				map("grh", vim.lsp.buf.hover, "Open [H]over")
 
 				-- Fuzzy find all the symbols in your current document.
 				--  Symbols are things like variables, functions, types, etc.
@@ -207,7 +208,6 @@ return {
 			-- clangd = {},
 			-- gopls = {},
 			-- pyright = {},
-			rust_analyzer = {},
 			-- ... etc. See `:help lspconfig-all` for a list of all the pre-configured LSPs
 			--
 			-- Some languages (like typescript) have entire language plugins that can be useful:
